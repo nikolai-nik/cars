@@ -1,0 +1,202 @@
+// search form////////////////
+.search-form {
+	@include col();
+	@include size(4);
+	@include size-md(6);
+	@include size-xs(10);
+
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.search-form__label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 12px;
+		line-height: 18px;
+		color: $color-white;
+		transition: all .6s ease;
+	}
+
+	.search-form__input {
+		border:none;
+		border-bottom: 2px solid $color-blue;
+		width: 100%;
+		background: inherit;
+		outline:none;
+		font-size:12px;
+		line-height: 18px;
+		padding: 3px 0;
+		position: relative;
+		box-sizing: border-box;
+	}
+	.search-form__submit {
+		position: absolute;
+		right: 0;
+		top:44%;
+		width: 25px;
+		border: none;
+		z-index: 9;
+		cursor: pointer;
+		background:inherit;
+		transform: translate3d(0,-50%,0) scale(1);
+		i {
+			color: $color-white;
+			font-size:12px;
+			transition: color .5s ease;
+		}
+		i:hover {
+			color: $color-blue;
+			transition: rotate(360deg);
+		}
+	}
+	.search-form__submit:focus,
+	.search-form__submit:active{
+		outline: none;
+	}
+	
+	
+	.search-form__input[placeholder]  {
+		color: $color-white;
+		padding-right: 40px;
+	}
+	.search-form__animation {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+
+	.search-form__animation:after,
+	.search-form__animation:before {
+		content: '';
+		background: $color-white;
+		height: 2px;
+		width: 0;
+		position: absolute;
+		bottom: 0;
+		transition: width .2s ease;
+	}
+
+	.search-form__animation:after {
+		left: 50%;
+	}
+
+	.search-form__animation:before {
+		right: 50%;
+	}
+
+	.search-form__input:focus~.search-form__label{
+		color: $color-blue;
+
+		font-size: 12px;
+		top:-15px;
+	}
+
+	.search-form__input:focus~.search-form__animation:before,
+	.search-form__input:focus~.search-form__animation:after{
+		width: 50%;
+	}	
+}
+// search form////////////////
+
+
+.email-form {
+	@media only screen and (max-width:576px){
+				margin-bottom:70px;
+		}
+
+	.email-form__label {
+		position: relative;
+		left: 0;
+		top: 0;
+		font-size: 12px;
+		line-height: 18px;
+		color: $color-white;
+		transition: all .6s ease;
+	}
+
+	.email-form__input {
+		border:none;
+		border-bottom: 2px solid $color-blue;
+		width: 70%;
+		background: inherit;
+		outline:none;
+		font-size:12px;
+		line-height: 18px;
+		padding: 3px 0;
+		position: relative;
+		box-sizing: border-box;
+		@media only screen and (max-width:576px){
+				width: 100%;
+		}
+	}
+	.email-form__submit {
+		position: absolute;
+		right: 0;
+		top:-2px;
+		cursor: pointer;
+		transform: translateY(-50%);
+		background: $color-blue;
+		color: $color-white;
+		transition: color,background .3s ease;
+		@media only screen and (max-width:576px){
+			left: 50%;
+			top: 30px;
+			transform: translateX(-50%);
+		}
+	}
+	.email-form__submit:hover {
+		color:$color-blue;
+		background: $color-white;
+	}
+	.email-form__submit:focus,
+	.email-form__submit:active{
+		outline: none;
+	}
+	
+	
+	.email-form__input[placeholder]  {
+		color: $color-white;
+		padding:0  20px;
+	}
+	.search-form__animation {
+		width: 70%;
+		display: block;
+		position: relative;
+		@media only screen and (max-width:576px){
+				width: 100%;
+		}
+	}
+
+	.search-form__animation:after,
+	.search-form__animation:before {
+		content: '';
+		background: $color-white;
+		height: 2px;
+		width: 0;
+		position: absolute;
+		bottom: 0;
+		transition: width .2s ease;
+	}
+
+	.search-form__animation:after {
+		left: 50%;
+	}
+
+	.search-form__animation:before {
+		right: 50%;
+	}
+
+	.email-form__input:focus~.email-form__label{
+		color: $color-blue;
+
+		font-size: 12px;
+		top:-15px;
+	}
+
+	.email-form__input:focus~.search-form__animation:before,
+	.email-form__input:focus~.search-form__animation:after{
+		width: 50%;
+	}	
+}

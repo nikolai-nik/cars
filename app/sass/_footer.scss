@@ -1,0 +1,167 @@
+.footer {
+	background: #272727;
+}
+.footer-newsletter {
+	background: #333333;
+	padding: 30px 0;
+}
+.newsletter {
+	@include row-flex();
+	align-items: center;
+	.h2-title {
+		color: $color-white;
+		padding: 0;
+	}
+}
+.newsletter-text {
+	@include col();
+	@include size(6);
+	@include size-md(4);
+	@include size-sm(12);
+	@include row-flex();
+	.newsletter-title {
+	@include col();
+	@include size(6);
+	@include size-md(12);
+		@media only screen and (max-width:768px){
+			text-align: center
+		}
+	}
+	.newsletter-subtitle {
+		@include col();
+		@include size(6);
+		@include size-md(12);
+		@include title-p()
+		color: $color-white;
+		@media only screen and (max-width:768px){
+			text-align: center
+		}
+	}
+
+}
+
+.email-form {
+	@include col();
+	@include size(6);
+	@include size-md(8);
+	@include size-sm(12);
+	@include row-flex();
+	margin: 30px 0;
+	position: relative;
+	
+}
+.footer-main {
+	padding-top: 30px;
+}
+.footer-nav {
+	@include row-flex();
+}
+.footer-block {
+	@include col();
+	@include size(4);
+	@include size-sm(6);
+	@include size-xs(12);
+}
+.footer-block--logo-social {
+	@include row-flex();
+	@include size-sm(12);
+	flex-direction: column;
+	color: $color-white;
+	.logo {
+		@include col();
+		@include size(12);
+		margin: 0;
+		padding: 0;
+	}
+	.footer-contact-text {
+		@include title-p();
+		padding: 30px 0;
+	}
+	i {
+		color: $color-blue;
+		padding-right: 20px;
+	}
+	a {
+		color: $color-white;
+		text-decoration: none;
+		transition: color .3s ease;
+		&:hover {
+			color: $color-blue;
+		}
+	}
+	.footer-tel {
+		padding: 20px 0;
+	}
+
+}
+.footer-social-list {
+	@include row-flex();
+	padding: 30px 0;
+	.footer-social__link i{
+		font-size: 18px;
+		transition: color .3s ease;
+		padding-right: 30px;
+	}
+	.footer-social__link:hover i{
+		color: $color-white;
+	}
+}
+
+////foooterr menu////////
+.footer-menu {
+
+}
+.footer-menu__item {
+	padding: 12px 0;
+}
+.footer-menu__link {
+	@include title-p();
+	color: $color-white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .3s ease;
+	&:hover {
+		color: $color-blue;
+	}
+}
+.footer-shopify {
+	@include row-flex();
+	align-items: center;
+	padding: 30px 0;
+}
+.shopify-info {
+	@include col();
+	@include size(6);
+	@include size-xs(12);
+	.shopify-text {
+		@include title-h3();
+		color: $color-white;
+		line-height: 48px;
+		.shopify__link {
+			color: $color-white;
+			text-decoration: none;
+			transition: color .3s ease;
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+}
+.shopify-list {
+	@include col();
+	@include size(6);
+	@include size-xs(12);
+	display: flex;
+	justify-content: flex-end;
+	@media screen and(max-width: 576px) {
+		justify-content: center;
+	}
+	li {
+		padding: 0 10px;
+		font-size: 48px;
+		color: $color-white;
+		@media screen and(max-width: 576px) {
+			font-size: 36px;
+		}
+	}
+}

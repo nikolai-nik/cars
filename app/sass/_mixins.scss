@@ -1,0 +1,22 @@
+@mixin title-h2(){
+	font-family: 'poppinsbold';
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+@mixin title-h3(){
+	font-family: 'poppinsmedium';
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin title-p(){
+	font-family: 'poppinsregular';
+	font-size: 12px;
+	line-height: 20px;
+}
+
+$color-blue: #4169e1;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #f7f7f7;
