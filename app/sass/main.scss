@@ -974,7 +974,12 @@ button.mfp-close {
 		top: 105px;
 		width: 0;
 		z-index: 1034;
-
+	@media only screen and (max-width:993px){
+		top: 145px;
+	}	
+	@media only screen and (max-width:577px){
+		top: 250px;
+	}	
 
    .color-switcher-nav {
 		width: 280px;

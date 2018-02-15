@@ -126,7 +126,8 @@
       font-family: 'poppinssemibold';
       -webkit-transition: all .3s ease;
       -o-transition: all .3s ease;
-      transition: all .3s ease; }
+      transition: all .3s ease;
+      border-bottom: 1px solid transparent; }
     .main-menu-list .main-menu__item .active {
       color: #4169e1;
       border-bottom: 1px solid #4169e1; }
@@ -544,7 +545,11 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .newsletter .h2-title {
     color: #fff;
     padding: 0; }
@@ -579,7 +584,8 @@
     margin-left: 15px;
     margin-right: 15px;
     width: -webkit-calc(50% - 30px);
-    width: calc(50% - 30px); }
+    width: calc(50% - 30px);
+    margin: 0; }
     @media screen and (max-width: 992px) {
       .newsletter-text .newsletter-title {
         width: -webkit-calc(100% - 30px);
@@ -598,7 +604,8 @@
     font-family: 'poppinsregular';
     font-size: 12px;
     line-height: 20px;
-    color: #fff; }
+    color: #fff;
+    margin: 0; }
     @media screen and (max-width: 992px) {
       .newsletter-text .newsletter-subtitle {
         width: -webkit-calc(100% - 30px);
@@ -622,7 +629,7 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: 30px 0;
+  margin: 30px 15px 30px 15px;
   position: relative; }
   @media screen and (max-width: 992px) {
     .email-form {
@@ -695,6 +702,9 @@
     font-size: 12px;
     line-height: 20px;
     padding: 30px 0; }
+    @media only screen and (max-width: 576px) {
+      .footer-block--logo-social .footer-contact-text {
+        text-align: center; } }
   .footer-block--logo-social i {
     color: #4169e1;
     padding-right: 20px; }
@@ -2354,6 +2364,12 @@ button.mfp-close {
   top: 105px;
   width: 0;
   z-index: 1034; }
+  @media only screen and (max-width: 993px) {
+    #color-switcher {
+      top: 145px; } }
+  @media only screen and (max-width: 577px) {
+    #color-switcher {
+      top: 250px; } }
   #color-switcher .color-switcher-nav {
     width: 280px;
     margin: 75px 0;
