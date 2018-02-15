@@ -169,6 +169,21 @@
 		//  });
 					// magnificPopup////////
 
+
+
+					////color switcher//////////////
+			$( '#color-switcher' ).on('click', '.toggle-button', function( event ) {
+			var $target = $( event.currentTarget ),
+				$parent = $target.parent( '.color-switcher-nav' );
+
+			$parent.toggleClass( 'active' );
+			});
+
+
+
+					////color switcher//////////////
+
+
 	});// end ready
 
 })( jQuery );

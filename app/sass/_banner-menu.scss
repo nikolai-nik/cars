@@ -60,7 +60,7 @@
 	display: flex;
 	width: 16px;
 	height: 16px;
-	top: 25px;
+	top: 23px;
 	transform: translateY(-50%);
 	right: 0;
 	cursor: pointer;
@@ -89,7 +89,7 @@
 }
 .banner-menu__icon.active {
 	position: absolute;
-	top: 25px;
+	top: 23px;
 	right: 0;
 	z-index: 1;
 	span {
