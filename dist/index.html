@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-            <div class="header-wrap">
+            <div class="header-wrap header-wrap--coord">
                   <div class="container top-panel">
                         <h3 class="top-tile"> 
                               All Clearance Up To 60% Off + Free Shipping Over $150!
@@ -47,7 +47,7 @@
                         </div>
                   </div>
             </div>
-            <div class="header-wrap header-wrap--logo-background"> 
+            <div class="header-wrap header-wrap--logo-background header-wrap--coord2"> 
                   <div class="container">
                         <div class="header-logo-search">
                               <a href="#" class="logo">
@@ -62,7 +62,7 @@
                         </div>
                   </div>
             </div>
-            <div class="header-wrap header-wrap--nav-background">
+            <div class="header-wrap header-wrap--nav-background fixed-menu">
                   <div class="container">
                         <div class="nav-wrap">
                               <nav class="main-menu">
@@ -373,28 +373,29 @@
                               
                         </div>
                   </div>
+                  <div id="color-switcher">
+                <div class="color-switcher-nav">
+                    <span class="color-switcher__icon toggle-button">
+                    </span>
+                    <p class="color-switcher__title">The customization tool allows you to make color changes in your theme.</p>
+                    <ul id="color-box">
+                        <li class="active" data-color-sheme="blue">
+                            <div class="color_scheme color_scheme_1" data-scheme="color_scheme_1"></div>
+                        </li>
+                        <li class="" data-color-sheme="green">
+                            <div class="color_scheme color_scheme_2" data-scheme="color_scheme_2"></div>
+                        </li>
+                        <li class="" data-color-sheme="orange">
+                            <div class="color_scheme color_scheme_3" data-scheme="color_scheme_3"></div>
+                        </li>
+                        <li class="" data-color-sheme="darker">
+                            <div class="color_scheme color_scheme_4" data-scheme="color_scheme_4"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        <div id="color-switcher">
-            <div class="color-switcher-nav">
-                <span class="color-switcher__icon toggle-button">
-                </span>
-                <p class="color-switcher__title">The customization tool allows you to make color changes in your theme.</p>
-                <ul id="color-box">
-                    <li class="active">
-                        <div class="color_scheme color_scheme_1" data-scheme="color_scheme_1"></div>
-                    </li>
-                    <li class="">
-                        <div class="color_scheme color_scheme_2" data-scheme="color_scheme_2"></div>
-                    </li>
-                    <li class="">
-                        <div class="color_scheme color_scheme_3" data-scheme="color_scheme_3"></div>
-                    </li>
-                    <li class="">
-                        <div class="color_scheme color_scheme_4" data-scheme="color_scheme_4"></div>
-                    </li>
-                </ul>
             </div>
-        </div>
+            
     </header>
     <main class="main">
         <section class="section section-banner-menu">
@@ -1178,10 +1179,12 @@
                           <li class="colection-tags__item">Canada</li>
                           <li class="colection-tags__item">China</li>
                           <li class="colection-tags__item">Europe</li>
-                          <li class="colection-tags__item">Middle segment</li>
-                          <li class="colection-tags__item">Motorcycle</li>
-                          <li class="colection-tags__item">Premium segment</li>
-                          <li class="colection-tags__item">USA</li>
+                         </ul> 
+                        <ul class="colection-tags">
+                            <li class="colection-tags__item">Middle segment</li>
+                            <li class="colection-tags__item">Motorcycle</li>
+                            <li class="colection-tags__item">Premium segment</li>
+                            <li class="colection-tags__item">USA</li>
                         </ul>
                       </div>
                     </div>
@@ -1417,7 +1420,7 @@
                 <div class="colection__text">
                   <h2 class="h2-title">spare parts</h2>
                   <div class="colection-tags--wrap">
-                    <ul class="colection-tags">
+                    <ul class="colection-tags colection-tags--horizontal">
                       <li class="colection-tags__item">Budget segment</li>
                       <li class="colection-tags__item">Canada</li>
                       <li class="colection-tags__item">China</li>

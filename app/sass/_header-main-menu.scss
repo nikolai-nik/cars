@@ -1,4 +1,11 @@
 //////////////menu/////////////////////
+
+.f-nav{ z-index: 9999;
+	position: fixed; 
+	left: 0; 
+	top: 0;
+	width: 100%;
+} 
 .main-menu {
 	@include col();
 	@include size(12);
@@ -110,6 +117,28 @@
 		.active {
 			color: $color-blue;
 			border-bottom: 1px solid $color-blue;
+
+
+			body[color-sheme="blue"] & {
+				color: $color-blue;
+				border-bottom: 1px solid $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+				border-bottom: 1px solid $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+				border-bottom: 1px solid $color-orange;
+				
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+				border-bottom: 1px solid $color-darker;;
+			}
+			@include md-block() {
+				border-bottom: none;
+			}
 		}
 		.active.main-menu__link--icon:after {
 			content: "\f077";
@@ -138,8 +167,20 @@
 
 		margin: 0 auto;
 		background: $color-blue;
-
 		padding: 30px;
+
+		body[color-sheme="blue"] & {
+			background: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			background: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			background: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			background: $color-darker;
+		}
 		.submenu-lev2 {
 			@include row-flex();
 			

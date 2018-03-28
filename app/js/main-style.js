@@ -1,6 +1,23 @@
 (function($){
 
 	$( document ).ready( function() {
+
+
+		//color-sheme////////
+		$( '#color-box > li' ).on( 'click', function() {
+			var $this = $( this ),
+				sheme = $this.data( 'color-sheme' );
+
+				console.log($this);
+				console.log(sheme);
+				//$('body').data( 'color-sheme', sheme );
+				$('body').attr( 'color-sheme', sheme );
+			// ('color-sheme-' + sheme);
+
+		});
+		//color-sheme////////
+
+		
 		///// menu_state_open////////////
 		$( '.main-menu__icon' ).on( 'click', function() {
 			var $this = $( this ),
@@ -39,6 +56,20 @@
 			});
 		});
 		///////////////////////
+
+		///////////////fixed-menu///////////
+		let nav = $('.fixed-menu');
+		let header = $('.header');
+ 		let fixedMenuHeight = header.height() - nav.height();
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > fixedMenuHeight) {
+				nav.addClass("f-nav");
+			} else {
+				nav.removeClass("f-nav");
+			}
+		});
+		
+			
 
 		////////////////currensy menu///////////
 		$.fn.currensy = function() {

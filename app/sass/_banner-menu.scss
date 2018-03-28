@@ -24,6 +24,19 @@
 			left: calc(100% + 30px);
 			width:calc(100% + 30px);
 			padding: 10px;
+
+			body[color-sheme="blue"] & {
+				background: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				background: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				background: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				background: $color-darker;
+			}
 			.banner-submenu__item{
 				padding: 5px 0;
 				.banner-submenu__link {

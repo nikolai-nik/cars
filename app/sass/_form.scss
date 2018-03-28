@@ -30,6 +30,19 @@
 		padding: 3px 0;
 		position: relative;
 		box-sizing: border-box;
+
+		body[color-sheme="blue"] & {
+			border-bottom: 2px solid $color-blue;
+		}
+		body[color-sheme="green"] & {
+			border-bottom: 2px solid $color-green;
+		}
+		body[color-sheme="orange"] & {
+			border-bottom: 2px solid $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			border-bottom: 2px solid $color-darker;
+		}
 	}
 	.search-form__submit {
 		position: absolute;
@@ -49,6 +62,19 @@
 		i:hover {
 			color: $color-blue;
 			transition: rotate(360deg);
+
+			body[color-sheme="blue"] & {
+				color: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+			}
 		}
 	}
 	.search-form__submit:focus,
@@ -88,9 +114,21 @@
 
 	.search-form__input:focus~.search-form__label{
 		color: $color-blue;
-
 		font-size: 12px;
 		top:-15px;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
 	}
 
 	.search-form__input:focus~.search-form__animation:before,
@@ -127,6 +165,19 @@
 		padding: 3px 0;
 		position: relative;
 		box-sizing: border-box;
+
+		body[color-sheme="blue"] & {
+			border-bottom: 2px solid $color-blue;
+		}
+		body[color-sheme="green"] & {
+			border-bottom: 2px solid $color-green;;
+		}
+		body[color-sheme="orange"] & {
+			border-bottom: 2px solid $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			border-bottom: 2px solid $color-darker;
+		}
 		@media only screen and (max-width:576px){
 				width: 100%;
 		}
@@ -140,6 +191,25 @@
 		background: $color-blue;
 		color: $color-white;
 		transition: color,background .3s ease;
+
+
+
+		body[color-sheme="blue"] & {
+			background: $color-blue;
+			color: $color-white;
+		}
+		body[color-sheme="green"] & {
+			background: $color-green;
+			color: $color-white;
+		}
+		body[color-sheme="orange"] & {
+			background: $color-orange;
+			color: $color-white;
+		}
+		body[color-sheme="darker"] & {
+			background: $color-darker;
+			color: $color-white;
+		}
 		@media only screen and (max-width:576px){
 			left: 50%;
 			top: 30px;
@@ -147,8 +217,25 @@
 		}
 	}
 	.email-form__submit:hover {
-		color:$color-blue;
+		color: $color-blue;
 		background: $color-white;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+			background: $color-white;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+			background: $color-white;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+			background: $color-white;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+			background: $color-white;
+		}
 	}
 	.email-form__submit:focus,
 	.email-form__submit:active{
@@ -190,9 +277,21 @@
 
 	.email-form__input:focus~.email-form__label{
 		color: $color-blue;
-
 		font-size: 12px;
 		top:-15px;
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
+
 	}
 
 	.email-form__input:focus~.search-form__animation:before,

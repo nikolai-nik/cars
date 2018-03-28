@@ -27,9 +27,39 @@
 	align-items: center;
 	font-size: 12px;
 	z-index: 3;
+
+	body[color-sheme="blue"] & {
+		color: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		color: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		color: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		color: $color-darker;
+	}
 	&:hover {
 		background: $color-blue;
 		color: $color-white;
+
+		body[color-sheme="blue"] & {
+			background: $color-blue;
+			color: #fff;
+		}
+		body[color-sheme="green"] & {
+			background: $color-green;
+			color: #fff;
+		}
+		body[color-sheme="orange"] & {
+			background: $color-orange;
+			color: #fff;
+		}
+		body[color-sheme="darker"] & {
+			background: $color-darker;
+			color: #fff;
+		}
 	}
 }
 .swiper-button-prev {

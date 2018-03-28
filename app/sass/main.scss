@@ -32,6 +32,18 @@ body {
 	margin: 0;
 	display: flex;
     flex-flow: column nowrap;
+    
+  //   &[color-sheme="blue"] {
+ 	// 	.section-banner-menu .banner-menu {
+ 	// 		background-color: $color-blue;
+ 	// 	}
+ 	// }
+
+ 	// &[color-sheme="green"] {
+ 	// 	.section-banner-menu .banner-menu {
+ 	// 		background-color: $color-green;
+ 	// 	}
+ 	// }
 }
 
 ///////////component////////////
@@ -39,6 +51,20 @@ body {
 	@include title-h2;
 	color: $color-blue;
 	padding: 15px 0 30px 15px;
+	
+
+	body[color-sheme="blue"] & {
+		color: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		color: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		color: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		color: $color-darker;
+	}
 }
 .section {
 	padding-bottom: 15px;
@@ -66,6 +92,7 @@ body {
 
 .header {
 	width: 100%;
+	position: relative;
 }
 .header-logo-search {
 	@include row-flex();
@@ -111,12 +138,24 @@ body {
 		color: $color-black;
 		transition: color .3s ease;
 	}
-	.top-account:hover {
+	.top-account:hover ,
+	.top-wishlist:hover{
 		color: $color-blue;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
 	}
-	.top-wishlist:hover {
-		color: $color-blue;
-	}
+	
 	@media screen and(max-width: 992px){
 		flex-direction: column;
 	}
@@ -172,6 +211,19 @@ body {
 ::-webkit-scrollbar-thumb {
 	border-radius: 100px;
 	background: $color-blue;
+
+	body[color-sheme="blue"] & {
+		background: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		background: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		background: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		background: $color-darker;
+	}
 }
 
 .currensy-list {
@@ -197,6 +249,19 @@ body {
 	color: $color-white;
 	background: $color-blue;
 	transition: .2s;
+
+	body[color-sheme="blue"] & {
+		background: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		background: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		background: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		background: $color-darker;
+	}
 }
 ///////////////menu .currensy//////////////
 
@@ -260,10 +325,36 @@ body {
 			border-radius: 50%;
 			background: $color-blue;
 			transition: color .3s ease;
+
+			body[color-sheme="blue"] & {
+				background: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				background: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				background: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				background: $color-darker;
+			}
 		}
 	}
 	.cart__link:hover {
 		color: $color_blue;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
 	}
 	.cart__link:hover .cart__items {
 		color: $color-black;
@@ -304,6 +395,19 @@ body {
 			span {
 				color: $color-blue;
 				padding-right: 10px;
+
+				body[color-sheme="blue"] & {
+					color: $color-blue;
+				}
+				body[color-sheme="green"] & {
+					color: $color-green;
+				}
+				body[color-sheme="orange"] & {
+					color: $color-orange;
+				}
+				body[color-sheme="darker"] & {
+					color: $color-darker;
+				}
 			}
 		}
 		.banner__subtitle {
@@ -322,6 +426,19 @@ body {
 		}
 		.btn--min:hover {
 			background: $color-blue;
+
+			body[color-sheme="blue"] & {
+			background: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				background: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				background: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				background: $color-darker;
+			}
 		}
 	}
 }
@@ -342,6 +459,20 @@ body {
 			margin-right:0;
 			padding: 30px;
 			background: $color-blue;
+
+
+			body[color-sheme="blue"] & {
+				background: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				background: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				background: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				background: $color-darker;
+			}
 			.h2-title {
 				color: $color-white;
 				padding: 0 0 30px 0;
@@ -400,6 +531,19 @@ body {
 				}
 				.btn:hover {
 					background: $color-blue;
+
+					body[color-sheme="blue"] & {
+						background: $color-blue;
+					}
+					body[color-sheme="green"] & {
+						background: $color-green;
+					}
+					body[color-sheme="orange"] & {
+						background: $color-orange;
+					}
+					body[color-sheme="darker"] & {
+						background: $color-darker;
+					}
 				}
 				@media (max-width: 768px){
 			 		top: 0;
@@ -494,6 +638,23 @@ body {
 	position: absolute;
 	bottom: 10px;
 	right:0;
+
+	body[color-sheme="blue"] & {
+		background: $color-blue;
+		color: $color-white;
+	}
+	body[color-sheme="green"] & {
+		background: $color-green;
+		color: $color-white;
+	}
+	body[color-sheme="orange"] & {
+		background: $color-orange;
+		color: $color-white;
+	}
+	body[color-sheme="darker"] & {
+		background: $color-darker;
+		color: $color-white;
+	}
 	@media (max-width: 992px){
  		bottom: -50px;
 		right:15px;
@@ -501,6 +662,24 @@ body {
 	&:hover {
 		background: $color-white;
 		color: $color-blue;
+
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+			background: $color-white;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+			background: $color-white;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+			background: $color-white;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+			background: $color-white;
+		}
 	}
 }
 /////////section-filter///////////
@@ -509,7 +688,6 @@ body {
 .section-slider {
 	.h2-title {
 		line-height: 50px;
-	
 		color: $color-blue;
 	}
 	.slider--wrapper {
@@ -605,7 +783,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	.h2-title {
+	h2.h2-title {
 		color: $color-white;
 	}
 	
@@ -617,24 +795,54 @@ body {
 .colection-tags {
 	color: $color-white;
 	padding:0 15px;
-	column-count: 2;
+	display: flex;
+	flex-direction: column;
 	.colection-tags__item {
 		@include title-h3();
 		text-transform: uppercase;
 		display: flex;
 		position: relative;
 		padding-left: 10px;
+		transition: color .3s ease;
+		&:hover {
+			color: $color-blue;
+			body[color-sheme="blue"] & {
+				color: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+			}
+		}
 		&:before {
 			content: '\f111';
 			font-family: 'FontAwesome';
 			font-size: 8px;
 			position: absolute;
 			left: 0;
-			color: $color-blue
+			color: $color-blue;
+			body[color-sheme="blue"] & {
+				color: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+			}
+
 		}
 	}
-
 }
+
 /////////section colection///////
 
 ////////////section product///////////
@@ -661,7 +869,8 @@ body {
 			object-fit:cover;
 		}
 		.colection-tags {
-			column-count: 1;
+			flex-flow: row wrap;
+			
 		}
 		.colection-tags__item {
 			display: inline;
@@ -685,10 +894,48 @@ body {
 	cursor: pointer;
 	background: $color-white;
 	transition: color, background .4s ease;
+
+	body[color-sheme="blue"] & {
+		color: $color-blue;
+		border: 1px solid $color-blue;
+	}
+	body[color-sheme="green"] & {
+		color: $color-green;
+		border: 1px solid $color-green;
+	}
+	body[color-sheme="orange"] & {
+		color: $color-orange;
+		border: 1px solid $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		color: $color-darker;
+		border: 1px solid $color-darker;
+	}
 }
 .btn:hover {
 	background: $color-blue;
 	color: $color-white;
+
+	body[color-sheme="blue"] & {
+		color: $color-white;
+		border: 1px solid $color-blue;
+		background: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		color: $color-white;
+		border: 1px solid $color-green;
+		background: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		color: $color-white;
+		border: 1px solid $color-orange;
+		background: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		color: $color-white;
+		border: 1px solid $color-darker;
+		background: $color-darker;
+	}
 }
 
 // button//////////////////
@@ -712,6 +959,19 @@ body {
 		list-style: none;
 		z-index: 20;
 		border: 1px solid #c3e1bd;
+
+		body[color-sheme="blue"] & {
+			background: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			background: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			background: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			background: $color-darker;
+		}
 	}
 	.ui-to-top:hover {
 		color: #c3e1bd;
@@ -770,6 +1030,19 @@ body {
 		}
 		.product-items__new {
 			background: $color-blue;
+
+			body[color-sheme="blue"] & {
+			background: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				background: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				background: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				background: $color-darker;
+			}
 		}
 	}
 }
@@ -848,6 +1121,19 @@ body {
 	transform: rotate(360deg);
 	text-decoration: none;
 	background: $color-blue;
+
+	body[color-sheme="blue"] & {
+		background: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		background: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		background: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		background: $color-darker;
+	}
 }
 .social__link:active {
 	text-decoration: none;
@@ -873,9 +1159,24 @@ body {
 			color: $color-black;
 			text-decoration: none;
 			transition: color .3s ease;
+
+			
 		}
 		.caption__link:hover {
 			color: $color-blue;
+
+			body[color-sheme="blue"] & {
+				color: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+			}
 		}
 	}
 	.caption__price {
@@ -967,23 +1268,14 @@ button.mfp-close {
 
 /////////////color swither////////////
 #color-switcher {
-		bottom: 0;
-		height: 100%;
 		position: fixed;
 		right: 0;
-		top: 105px;
-		width: 0;
-		z-index: 1034;
-	@media only screen and (max-width:993px){
-		top: 145px;
-	}	
-	@media only screen and (max-width:577px){
-		top: 250px;
-	}	
+		z-index: 9;
+		margin-top: 5px;
+	
 
    .color-switcher-nav {
 		width: 280px;
-		margin: 75px 0;
 		padding: 20px;
 		position: absolute;
 		box-sizing: border-box;
@@ -1001,6 +1293,7 @@ button.mfp-close {
 		}
 	}
 }
+
 .color-switcher__icon {
 	color: $color_white;
 	cursor: pointer;
@@ -1032,6 +1325,7 @@ button.mfp-close {
 	li {
 		padding: 10px;
 		cursor: pointer;
+		transition: opacity .3s ease;
 		&:hover {
 			opacity: 0.7;
 		}

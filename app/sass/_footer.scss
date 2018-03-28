@@ -88,13 +88,40 @@
 	i {
 		color: $color-blue;
 		padding-right: 20px;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
+
 	}
 	a {
 		color: $color-white;
 		text-decoration: none;
 		transition: color .3s ease;
 		&:hover {
+			color: $color-blue; 
+
+			body[color-sheme="blue"] & {
 			color: $color-blue;
+			}
+			body[color-sheme="green"] & {
+				color: $color-green;
+			}
+			body[color-sheme="orange"] & {
+				color: $color-orange;
+			}
+			body[color-sheme="darker"] & {
+				color: $color-darker;
+			}
 		}
 	}
 	.footer-tel {
@@ -116,9 +143,7 @@
 }
 
 ////foooterr menu////////
-.footer-menu {
 
-}
 .footer-menu__item {
 	padding: 12px 0;
 }
@@ -130,6 +155,19 @@
 	transition: color .3s ease;
 	&:hover {
 		color: $color-blue;
+
+		body[color-sheme="blue"] & {
+			color: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			color: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			color: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			color: $color-darker;
+		}
 	}
 }
 .footer-shopify {
@@ -151,6 +189,18 @@
 			transition: color .3s ease;
 			&:hover {
 				color: $color-blue;
+				body[color-sheme="blue"] & {
+					color: $color-blue;
+				}
+				body[color-sheme="green"] & {
+					color: $color-green;
+				}
+				body[color-sheme="orange"] & {
+					color: $color-orange;
+				}
+				body[color-sheme="darker"] & {
+					color: $color-darker;
+				}
 			}
 		}
 	}
