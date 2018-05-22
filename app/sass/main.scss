@@ -283,7 +283,41 @@ body {
 		justify-content: center;
 	}
 }
-
+.logo__img {
+	color: #ffb600;
+}
+.cls-3, .cls-4 {
+	body[color-sheme="blue"] & {
+		fill: $color-blue;
+		stroke: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		fill: $color-green;
+		stroke: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		fill: $color-orange;
+		stroke: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		fill: $color-darker;
+		stroke: $color-darker;
+	}
+}
+.cls-5 {
+	body[color-sheme="blue"] & {
+		stroke: $color-blue;
+	}
+	body[color-sheme="green"] & {
+		stroke: $color-green;
+	}
+	body[color-sheme="orange"] & {
+		stroke: $color-orange;
+	}
+	body[color-sheme="darker"] & {
+		stroke: $color-darker;
+	}
+}
 //////////////logotip///////////
 
 

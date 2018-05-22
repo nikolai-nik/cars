@@ -5,6 +5,41 @@
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
 </x:xmpmeta>
+<<<<<<< HEAD
+=======
+<defs>
+    <style>
+      .cls-1 {
+        font-size: 23px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Poppins;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        font-size: 14px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: red;
+      }
+
+      .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: red;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+>>>>>>> master
                                                                                                     
                                                                                                     
                                                                                                     
