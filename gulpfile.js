@@ -14,6 +14,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     plumber = require('gulp-plumber'),
     smartgrid = require('smart-grid'),
     rigger = require('gulp-rigger'),
+    babel = require ('gulp-babel'),
     gulpSassError = require('gulp-sass-error');
 
     
@@ -56,7 +57,12 @@ gulp.task('scripts', function() {
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
-
+gulp.task('js', function () {
+    return gulp.src('app/js/main-style.js')
+        .pipe (babel ({presets: ['es2015']}))
+        .pipe(gulp.dest('dist/js'))
+});
+    
 gulp.task('css-libs', ['sass'], function() {
     return gulp.src('app/css/libs.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
@@ -104,7 +110,7 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'css-main', 'scripts'], function() {
+gulp.task('build', ['clean', 'sass', 'css-main', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'app/css/main.css',

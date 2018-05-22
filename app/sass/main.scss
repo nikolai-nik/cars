@@ -198,33 +198,7 @@ body {
 	font-size: 12px;
 	padding:5px 10px;
 }
-::-webkit-scrollbar {
-	background: transparent;
-	width: 0.5em;
-	position: absolute;
-}
-::-webkit-scrollbar-track {
-	background: transparent;
-	position: absolute;
-	z-index: -2;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 100px;
-	background: $color-blue;
 
-	body[color-sheme="blue"] & {
-		background: $color-blue;
-	}
-	body[color-sheme="green"] & {
-		background: $color-green;
-	}
-	body[color-sheme="orange"] & {
-		background: $color-orange;
-	}
-	body[color-sheme="darker"] & {
-		background: $color-darker;
-	}
-}
 
 .currensy-list {
  background: $color-white;
@@ -235,6 +209,33 @@ body {
  overflow-x: hidden !important;
  position: absolute;
  display: block;
+	&::-webkit-scrollbar {
+		background: transparent;
+		width: 0.5em;
+		position: absolute;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		position: absolute;
+		z-index: -2;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 100px;
+		background: $color-blue;
+
+		body[color-sheme="blue"] & {
+			background: $color-blue;
+		}
+		body[color-sheme="green"] & {
+			background: $color-green;
+		}
+		body[color-sheme="orange"] & {
+			background: $color-orange;
+		}
+		body[color-sheme="darker"] & {
+			background: $color-darker;
+		}
+	}
 }
 .option {
 	display: block;
@@ -944,22 +945,24 @@ body {
 ////////////ui-to-top///////////
 .bottom_top {
 	.ui-to-top {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		text-decoration: none;
-		font-size: 24px;
-		line-height: 45px;
+		font-size: 16px;
 		background: $color-blue;
 		color: $color-white;
 		position: fixed;
-		right: 10%;
+		right: 0;
 		bottom: 65px;
 		overflow: hidden;
 		text-align: center;
 		list-style: none;
 		z-index: 20;
 		border: 1px solid #c3e1bd;
-
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s ease;
 		body[color-sheme="blue"] & {
 			background: $color-blue;
 		}
@@ -974,7 +977,8 @@ body {
 		}
 	}
 	.ui-to-top:hover {
-		color: #c3e1bd;
+		color: #000;
+		opacity: 0.8;
 	}
 	.ui-to-top:active {
 	 	background: $color-black;

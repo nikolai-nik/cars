@@ -1,1 +1,72 @@
-<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="225" height="34"><defs><style>.cls-3,.cls-4{fill:#4169e1}.cls-4,.cls-5{fill-rule:evenodd}.cls-5{fill:none;stroke:#4169e1;stroke-width:2px}</style></defs><text id="Multibuy" x="68.877" y="17.549" style="text-transform:uppercase" fill="#fff" font-family="Poppins" font-weight="500" font-size="23">Multibuy</text><text id="Car_Parts_store" data-name="Car Parts store" x="68.877" y="32.549" style="text-transform:uppercase" font-size="14" fill="#fff" font-family="Poppins" font-weight="500">Car Parts store</text><path class="cls-3" d="M0 9h1.594v24H0z"/><path id="Rectangle_14_copy_5" data-name="Rectangle 14 copy 5" class="cls-3" d="M32 9h2v24h-2z"/><path id="Rectangle_14_copy_6" data-name="Rectangle 14 copy 6" class="cls-4" d="M461.433 74.188l1.015 1.226-16.934 14.4-1.014-1.228z" transform="translate(-429 -65)"/><path id="Rectangle_14_copy_7" data-name="Rectangle 14 copy 7" class="cls-4" d="M430.032 73.987l-1.026 1.257 17.12 14.767 1.026-1.257z" transform="translate(-429 -65)"/><path id="Rectangle_14_copy_8" data-name="Rectangle 14 copy 8" class="cls-4" d="M461.433 66.188l1.015 1.226-16.934 14.4-1.014-1.228z" transform="translate(-429 -65)"/><path id="Rectangle_14_copy_8-2" data-name="Rectangle 14 copy 8" class="cls-4" d="M430.032 65.987l-1.026 1.257 17.12 14.768 1.026-1.257zm42.389 2.413" transform="translate(-429 -65)"/><path class="cls-5" d="M466.9 66v13.6h13.421s4.757-.936 4.736-7.2-4.736-6.4-4.736-6.4H466.9z" transform="translate(-429 -65)"/><path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-5" d="M466.9 84.4V98h16.338A7.055 7.055 0 0 0 489 90.8a5.991 5.991 0 0 0-5.767-6.4H466.9z" transform="translate(-429 -65)"/></svg>
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="225" height="34" viewBox="0 0 225 34">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        font-size: 23px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Poppins;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        font-size: 14px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #4169e1;
+      }
+
+      .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #4169e1;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <text id="Multibuy" class="cls-1" x="68.877" y="17.549">Multibuy</text>
+  <text id="Car_Parts_store" data-name="Car Parts store" class="cls-2" x="68.877" y="32.549">Car Parts store</text>
+  <rect class="cls-3" y="9" width="1.594" height="24"/>
+  <rect id="Rectangle_14_copy_5" data-name="Rectangle 14 copy 5" class="cls-3" x="32" y="9" width="2" height="24"/>
+  <path id="Rectangle_14_copy_6" data-name="Rectangle 14 copy 6" class="cls-4" d="M461.433,74.188l1.015,1.226-16.934,14.4L444.5,88.586Z" transform="translate(-429 -65)"/>
+  <path id="Rectangle_14_copy_7" data-name="Rectangle 14 copy 7" class="cls-4" d="M430.032,73.987l-1.026,1.257,17.12,14.767,1.026-1.257Z" transform="translate(-429 -65)"/>
+  <path id="Rectangle_14_copy_8" data-name="Rectangle 14 copy 8" class="cls-4" d="M461.433,66.188l1.015,1.226-16.934,14.4L444.5,80.586Z" transform="translate(-429 -65)"/>
+  <path id="Rectangle_14_copy_8-2" data-name="Rectangle 14 copy 8" class="cls-4" d="M430.032,65.987l-1.026,1.257,17.12,14.768,1.026-1.257ZM472.421,68.4" transform="translate(-429 -65)"/>
+  <path class="cls-5" d="M466.9,66V79.6h13.421s4.757-.936,4.736-7.2-4.736-6.4-4.736-6.4H466.9Z" transform="translate(-429 -65)"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-5" d="M466.9,84.4V98h16.338A7.055,7.055,0,0,0,489,90.8a5.991,5.991,0,0,0-5.767-6.4H466.9Z" transform="translate(-429 -65)"/>
+</svg>
