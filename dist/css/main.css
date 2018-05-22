@@ -1652,6 +1652,37 @@ body {
           -ms-flex-pack: center;
               justify-content: center; } }
 
+.logo__img {
+  color: #ffb600; }
+
+body[color-sheme="blue"] .cls-3, body[color-sheme="blue"] .cls-4 {
+  fill: #4169e1;
+  stroke: #4169e1; }
+
+body[color-sheme="green"] .cls-3, body[color-sheme="green"] .cls-4 {
+  fill: green;
+  stroke: green; }
+
+body[color-sheme="orange"] .cls-3, body[color-sheme="orange"] .cls-4 {
+  fill: orange;
+  stroke: orange; }
+
+body[color-sheme="darker"] .cls-3, body[color-sheme="darker"] .cls-4 {
+  fill: #bf8040;
+  stroke: #bf8040; }
+
+body[color-sheme="blue"] .cls-5 {
+  stroke: #4169e1; }
+
+body[color-sheme="green"] .cls-5 {
+  stroke: green; }
+
+body[color-sheme="orange"] .cls-5 {
+  stroke: orange; }
+
+body[color-sheme="darker"] .cls-5 {
+  stroke: #bf8040; }
+
 .header-wrap--nav-background {
   background: #333333; }
 
